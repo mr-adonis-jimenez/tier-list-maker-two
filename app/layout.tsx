@@ -8,6 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tier List Maker - Create Custom Rankings",
+  metadataBase: new URL("https://tierlistmakertwo.top"),
   description:
     "Create custom tier lists by uploading images and ranking them. Drag and drop images into S, A, B, C, and D tiers. Export your tier list as an image.",
   keywords: [
