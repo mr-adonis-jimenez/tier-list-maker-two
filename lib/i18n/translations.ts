@@ -8,6 +8,7 @@ export const translations = {
     unassignedTitle: "Unassigned Images",
     unassignedPlaceholder:
       'Click "Add Images" above to start creating your tier list',
+    blog: "Blog",
     tierLabels: {
       S: "S",
       A: "A",
@@ -26,6 +27,7 @@ export const translations = {
     unassignedTitle: "未分類の画像",
     unassignedPlaceholder:
       "上の「画像を追加」をクリックしてティアリストの作成を開始",
+    blog: "ブログ",
     tierLabels: {
       S: "S",
       A: "A",
@@ -44,6 +46,7 @@ export const translations = {
     unassignedTitle: "Неназначенные изображения",
     unassignedPlaceholder:
       "Нажмите «Добавить изображения» выше, чтобы начать создание тир-листа",
+    blog: "Блог",
     tierLabels: {
       S: "S",
       A: "A",

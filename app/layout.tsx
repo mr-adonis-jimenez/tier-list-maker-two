@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import type React from "react";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -8,7 +9,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tier List Maker - Create Custom Rankings",
-  metadataBase: new URL("https://tierlistmakertwo.top"),
   description:
     "Create custom tier lists by uploading images and ranking them. Drag and drop images into S, A, B, C, and D tiers. Export your tier list as an image.",
   keywords: [
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     "image ranking",
     "custom tier list",
   ],
+  metadataBase: new URL("https://tierlistmakertwo.top"),
   generator: "Tier List Maker",
   openGraph: {
     title: "Tier List Maker - Create Custom Rankings",
@@ -61,8 +62,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`font-sans antialiased`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`font-sans antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

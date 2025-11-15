@@ -13,10 +13,12 @@ import {
 } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
 import html2canvas from "html2canvas";
-import { Download, Trash2, Upload } from "lucide-react";
+import { BookOpen, Download, Trash2, Upload } from "lucide-react";
+import Link from "next/link";
 import type React from "react";
 import { useRef, useState } from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import type { Locale } from "@/lib/i18n/translations";
 
@@ -118,6 +120,7 @@ interface TierListMakerProps {
     unassignedTitle: string;
     unassignedPlaceholder: string;
     tierLabels: Record<string, string>;
+    blog: string;
   };
   locale: Locale;
 }
@@ -338,8 +341,17 @@ const TierListMaker = ({ dictionary, locale }: TierListMakerProps) => {
     >
       <div className="min-h-screen bg-background p-4 md:p-8">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-4 flex justify-end">
-            <LanguageSwitcher currentLocale={locale} />
+          <div className="mb-4 flex items-center justify-between gap-2">
+            <Link href="/posts" scroll={false}>
+              <Button variant="ghost" size="sm" className="gap-2">
+                <BookOpen className="h-4 w-4" />
+                <span className="hidden sm:inline">{dictionary.blog}</span>
+              </Button>
+            </Link>
+            <div className="flex gap-2">
+              <ThemeToggle />
+              <LanguageSwitcher currentLocale={locale} />
+            </div>
           </div>
 
           <div className="mb-8 text-center">
