@@ -23,7 +23,7 @@ export function SiteNav() {
             href="/posts"
             className="px-4 py-2 rounded-lg text-gray-900 dark:text-white hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-all font-bold"
           >
-            Posts
+            Blog
           </Link>
           <BlogThemeToggle />
         </div>
