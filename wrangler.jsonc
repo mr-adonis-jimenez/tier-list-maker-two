@@ -4,33 +4,28 @@
   "name": "tier-list-maker",
   "keep_names": false,
   "compatibility_date": "2024-12-30",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "global_fetch_strictly_public"
-  ],
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   // R2 incremental cache
   "r2_buckets": [
     {
       "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "next-bucket",
-    },
+      "bucket_name": "next-bucket"
+    }
   ],
   // DO Queue
   "durable_objects": {
     "bindings": [
       {
         "name": "NEXT_CACHE_DO_QUEUE",
-        "class_name": "DOQueueHandler",
-      },
-    ],
+        "class_name": "DOQueueHandler"
+      }
+    ]
   },
   "migrations": [
     {
       "tag": "v1",
-      "new_sqlite_classes": [
-        "DOQueueHandler"
-      ],
-    },
+      "new_sqlite_classes": ["DOQueueHandler"]
+    }
   ],
   // D1 Tag Cache (Next mode)
   // This is only required if you use On-demand revalidation
@@ -38,8 +33,8 @@
     {
       "binding": "NEXT_TAG_CACHE_D1",
       "database_id": "b0287777-432b-4da4-b24f-4fe0b4d49962",
-      "database_name": "next-tier-list-maker-list",
-    },
+      "database_name": "next-tier-list-maker-list"
+    }
   ],
   "assets": {
     "directory": ".open-next/assets",

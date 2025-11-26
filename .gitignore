@@ -46,3 +46,15 @@ next-env.d.ts
 cloudflare-env.d.ts
 .dev.vars
 
+.claue
+
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
