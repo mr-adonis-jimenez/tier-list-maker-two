@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tierlistmakertwo.top/sitemap.xml
+
+# Disallow admin or private routes if any
+# Disallow: /admin
+# Disallow: /api/private

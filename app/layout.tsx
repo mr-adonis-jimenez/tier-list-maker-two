@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import type React from "react";
+import { StructuredData } from "@/components/structured-data";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
@@ -8,31 +9,65 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tier List Maker - Create Custom Rankings",
+  title: {
+    default: "Tier List Maker - Create Custom Rankings & Tier Lists",
+    template: "%s | Tier List Maker",
+  },
   description:
-    "Create custom tier lists by uploading images and ranking them. Drag and drop images into S, A, B, C, and D tiers. Export your tier list as an image.",
+    "Free online tier list maker. Upload images, drag & drop to create custom tier lists (S/A/B/C/D). Export as PNG. Perfect for ranking movies, games, characters & more.",
   keywords: [
+    "tier list maker",
     "tier list",
-    "ranking",
-    "tier maker",
+    "create tier list",
     "image ranking",
+    "drag and drop",
+    "tier maker",
+    "ranking tool",
     "custom tier list",
+    "tier list generator",
+    "rank images",
+    "tier",
+    "S tier",
+    "A tier",
+    "ranking",
+    "tier list online",
   ],
+  authors: [{ name: "Tier List Maker Team" }],
+  creator: "Tier List Maker",
+  publisher: "Tier List Maker",
   metadataBase: new URL("https://tierlistmakertwo.top"),
-  generator: "Tier List Maker",
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en",
+      "ja-JP": "/ja",
+      "ru-RU": "/ru",
+    },
+  },
   openGraph: {
-    title: "Tier List Maker - Create Custom Rankings",
-    description:
-      "Create custom tier lists by uploading images and ranking them.",
     type: "website",
-    images: ["/og-image.png"],
+    locale: "en_US",
+    url: "https://tierlistmakertwo.top",
+    title: "Tier List Maker - Create Custom Rankings & Tier Lists",
+    description:
+      "Free online tier list maker. Upload images, drag & drop to create custom tier lists. Export as PNG and share your rankings.",
+    siteName: "Tier List Maker",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tier List Maker - Create Custom Tier Lists",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tier List Maker - Create Custom Rankings",
+    title: "Tier List Maker - Create Custom Rankings & Tier Lists",
     description:
-      "Create custom tier lists by uploading images and ranking them.",
+      "Free online tier list maker. Upload images, drag & drop to create custom tier lists. Export as PNG and share.",
     images: ["/og-image.png"],
+    creator: "@tierlistmaker",
   },
   icons: {
     icon: [
@@ -96,6 +131,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <StructuredData type="webapp" />
           {children}
         </ThemeProvider>
       </body>

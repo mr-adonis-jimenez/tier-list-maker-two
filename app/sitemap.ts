@@ -5,10 +5,19 @@ import { locales } from "@/lib/i18n/translations";
 
 export const revalidate = 86400; // 24 hours in seconds
 
-const staticRoutes = ["/", "/posts", ...locales.map((item) => `/${item}`)];
+const staticRoutes = [
+  "/",
+  "/posts",
+  "/about",
+  "/contact",
+  "/privacy",
+  "/faq",
+  "/terms",
+  ...locales.map((item) => `/${item}`),
+];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://yourdomain.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tierlistmakertwo.top";
 
   try {
     const staticPages: MetadataRoute.Sitemap = staticRoutes.map((route) => ({

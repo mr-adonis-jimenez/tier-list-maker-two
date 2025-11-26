@@ -25,6 +25,18 @@ export function SiteNav() {
           >
             Blog
           </Link>
+          <Link
+            href="/about"
+            className="px-4 py-2 rounded-lg text-gray-900 dark:text-white hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-all font-bold"
+          >
+            About
+          </Link>
+          <Link
+            href="/contact"
+            className="px-4 py-2 rounded-lg text-gray-900 dark:text-white hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-all font-bold"
+          >
+            Contact
+          </Link>
           <BlogThemeToggle />
         </div>
       </div>
