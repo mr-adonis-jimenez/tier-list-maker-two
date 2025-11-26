@@ -1,8 +1,10 @@
 import { readItems } from "@directus/sdk";
+import { Home } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -36,7 +38,12 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="mx-auto max-w-7xl">
         <div className="mb-4 flex items-center justify-between gap-2">
-          <div></div>
+          <Link href="/" scroll={false}>
+            <Button variant="ghost" size="sm" className="gap-2">
+              <Home className="h-4 w-4" />
+              <span className="hidden sm:inline">Home</span>
+            </Button>
+          </Link>
           <div className="flex gap-2">
             <ThemeToggle />
             <LanguageSwitcher currentLocale="en" />

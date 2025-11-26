@@ -1,5 +1,5 @@
 import { readItems } from "@directus/sdk";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Home } from "lucide-react";
 import type { Metadata } from "next";
 import { draftMode } from "next/headers";
 import Image from "next/image";
@@ -69,12 +69,20 @@ export default async function PostPage({
       <div className="min-h-screen bg-background p-4 md:p-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-4 flex items-center justify-between gap-2">
-            <Link href="/posts" scroll={false}>
-              <Button variant="ghost" size="sm" className="gap-2">
-                <BookOpen className="h-4 w-4" />
-                <span className="hidden sm:inline">Blog</span>
-              </Button>
-            </Link>
+            <div className="flex gap-2">
+              <Link href="/" scroll={false}>
+                <Button variant="ghost" size="sm" className="gap-2">
+                  <Home className="h-4 w-4" />
+                  <span className="hidden sm:inline">Home</span>
+                </Button>
+              </Link>
+              <Link href="/posts" scroll={false}>
+                <Button variant="ghost" size="sm" className="gap-2">
+                  <BookOpen className="h-4 w-4" />
+                  <span className="hidden sm:inline">Blog</span>
+                </Button>
+              </Link>
+            </div>
             <div className="flex gap-2">
               <ThemeToggle />
               <LanguageSwitcher currentLocale="en" />
