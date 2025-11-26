@@ -17,7 +17,8 @@ const staticRoutes = [
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tierlistmakertwo.top";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://tierlistmakertwo.top";
 
   try {
     const staticPages: MetadataRoute.Sitemap = staticRoutes.map((route) => ({

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 interface FAQItemProps {
   question: string;
@@ -16,6 +16,7 @@ function FAQItem({ question, answer, isOpen, onClick }: FAQItemProps) {
   return (
     <div className="rounded-lg border border-border bg-card">
       <button
+        type="button"
         onClick={onClick}
         className="flex w-full items-center justify-between p-6 text-left"
       >
@@ -125,8 +126,8 @@ export function FAQClient() {
           </h1>
 
           <p className="mb-12 text-lg text-muted-foreground">
-            Find answers to common questions about using Tier List Maker. Can't find what
-            you're looking for?{" "}
+            Find answers to common questions about using Tier List Maker. Can't
+            find what you're looking for?{" "}
             <Link href="/contact" className="text-primary underline">
               Contact us
             </Link>
@@ -148,8 +149,8 @@ export function FAQClient() {
           <div className="mt-16 rounded-lg border border-border bg-muted/50 p-8 text-center">
             <h2 className="mb-4 text-2xl font-bold">Still have questions?</h2>
             <p className="mb-6 text-muted-foreground">
-              We're here to help! Reach out to us and we'll get back to you as soon as
-              possible.
+              We're here to help! Reach out to us and we'll get back to you as
+              soon as possible.
             </p>
             <Button asChild>
               <Link href="/contact">Contact Us</Link>

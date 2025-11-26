@@ -61,14 +61,10 @@ export function RecentPosts({ posts }: RecentPostsProps) {
 
   return (
     <section className="mt-12">
-      <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-950">
+      <Card className="border border-border bg-card">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold text-gray-900 dark:text-white">
-            Recent Posts
-          </CardTitle>
-          <CardDescription className="text-gray-600 dark:text-gray-400">
-            Check out our latest articles
-          </CardDescription>
+          <CardTitle className="text-3xl font-bold">Recent Posts</CardTitle>
+          <CardDescription>Check out our latest articles</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -79,12 +75,12 @@ export function RecentPosts({ posts }: RecentPostsProps) {
                 onClick={(e) => handlePostClick(e, post.slug)}
                 className="group"
               >
-                <Card className="h-full border-gray-200 dark:border-gray-800 hover:border-purple-500 dark:hover:border-purple-600 transition-all duration-300 hover:shadow-lg">
+                <Card className="h-full border border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg">
                   <CardHeader>
-                    <CardTitle className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors line-clamp-2">
+                    <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors line-clamp-2">
                       {post.title}
                     </CardTitle>
-                    <CardDescription className="text-sm text-gray-500 dark:text-gray-500">
+                    <CardDescription>
                       {new Date(post.published_at).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "short",
@@ -94,7 +90,7 @@ export function RecentPosts({ posts }: RecentPostsProps) {
                   </CardHeader>
                   {post.description && (
                     <CardContent>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">
+                      <p className="text-sm text-muted-foreground line-clamp-3">
                         {post.description}
                       </p>
                     </CardContent>

@@ -7,7 +7,10 @@ interface StructuredDataProps {
   data?: Record<string, unknown>;
 }
 
-export function StructuredData({ type = "webapp", data = {} }: StructuredDataProps) {
+export function StructuredData({
+  type = "webapp",
+  data = {},
+}: StructuredDataProps) {
   useEffect(() => {
     const structuredData = getStructuredData(type, data);
     const script = document.createElement("script");

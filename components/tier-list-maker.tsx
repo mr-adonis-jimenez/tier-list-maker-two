@@ -455,19 +455,34 @@ const TierListMaker = ({ dictionary, locale }: TierListMakerProps) => {
         <footer className="mt-16 border-t border-border py-8 text-center text-sm text-muted-foreground">
           <div className="mx-auto max-w-4xl space-y-4">
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/about" className="hover:text-primary transition-colors">
+              <Link
+                href="/about"
+                className="hover:text-primary transition-colors"
+              >
                 About
               </Link>
-              <Link href="/contact" className="hover:text-primary transition-colors">
+              <Link
+                href="/contact"
+                className="hover:text-primary transition-colors"
+              >
                 Contact
               </Link>
-              <Link href="/faq" className="hover:text-primary transition-colors">
+              <Link
+                href="/faq"
+                className="hover:text-primary transition-colors"
+              >
                 FAQ
               </Link>
-              <Link href="/privacy" className="hover:text-primary transition-colors">
+              <Link
+                href="/privacy"
+                className="hover:text-primary transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-primary transition-colors">
+              <Link
+                href="/terms"
+                className="hover:text-primary transition-colors"
+              >
                 Terms of Service
               </Link>
             </div>
