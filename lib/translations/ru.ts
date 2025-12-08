@@ -1,4 +1,96 @@
 export const translations_ru: { [key: string]: string } = {
+  // Tier List Maker Переводы
+  "tierlist.title": "Создатель Tier List",
+  "tierlist.description": "Создавайте и делитесь своими списками уровней",
+  "tierlist.addImages": "Добавить изображения",
+  "tierlist.export": "Экспорт",
+  "tierlist.clearAll": "Очистить всё",
+  "tierlist.unassignedTitle": "Неназначенные изображения",
+  "tierlist.unassignedPlaceholder":
+    "Перетащите изображения сюда или нажмите для загрузки",
+  "tierlist.tierLabels.S": "S",
+  "tierlist.tierLabels.A": "A",
+  "tierlist.tierLabels.B": "B",
+  "tierlist.tierLabels.C": "C",
+  "tierlist.tierLabels.D": "D",
+  "tierlist.startCreating": "Начать создание",
+  "tierlist.viewFAQ": "Посмотреть FAQ",
+  "about.whatwedo.easy_upload": "Простая загрузка изображений",
+  "about.whatwedo.easy_upload_content":
+    "Быстро загружайте несколько изображений для создания списка уровней",
+  "about.whatwedo.drag_drop": "Интерфейс перетаскивания",
+  "about.whatwedo.drag_drop_content":
+    "Интуитивная функция перетаскивания для организации элементов по уровням",
+  "about.whatwedo.export": "Опции экспорта",
+  "about.whatwedo.export_content":
+    "Экспортируйте списки уровней как качественные изображения для публикации в соцсетях",
+  "about.whatwedo.tiers": "Несколько уровней",
+  "about.whatwedo.tiers_content":
+    "Организуйте элементы по уровням S, A, B, C и D (или настройте по необходимости)",
+  "about.whatwedo.multilang": "Многоязычная поддержка",
+  "about.whatwedo.multilang_content":
+    "Доступно на английском, китайском, японском, французском, испанском, немецком и русском",
+  "about.whatwedo.theme": "Тёмная/светлая тема",
+  "about.whatwedo.theme_content":
+    "Выберите предпочтительную тему для лучшего просмотра",
+  "about.whychoose.content":
+    "Мы верим, что ранжирование и организация элементов должны быть простыми, быстрыми и приятными. Наш инструмент разработан для удобства всех пользователей.",
+  "about.ourstory.content":
+    "Tier List Maker был создан для решения распространённой проблемы визуального ранжирования без сложного программного обеспечения.",
+  "about.contact.title": "Свяжитесь с нами",
+  "about.contact.content":
+    "Есть вопросы, предложения или отзывы? Мы будем рады услышать вас! Посетите нашу страницу контактов.",
+
+  // Страница контактов
+  "contact.title": "Свяжитесь с нами",
+  "contact.subtitle":
+    "Мы будем рады услышать от вас! Будь то вопросы, отзывы или просто приветствие, не стесняйтесь обращаться.",
+  "contact.general.title": "Общие вопросы",
+  "contact.general.description":
+    "Для общих вопросов о нашем сервисе, запросов функций или отзывов.",
+  "contact.general.email": "Электронная почта:",
+  "contact.support.title": "Поддержка",
+  "contact.support.description":
+    "Нужна помощь с использованием платформы? Посмотрите наш FAQ или свяжитесь с нами.",
+  "contact.support.button": "Посмотреть FAQ",
+  "contact.blog.title": "Блог",
+  "contact.blog.description":
+    "Следите за последними новостями, функциями и уроками в нашем блоге.",
+  "contact.blog.button": "Читать наш блог",
+  "contact.social.title": "Социальные сети",
+  "contact.social.description":
+    "Подписывайтесь на нас в социальных сетях для обновлений и обсуждений.",
+  "contact.social.twitter": "Twitter",
+  "contact.social.github": "GitHub",
+  "contact.important.title": "Другие важные страницы",
+  "contact.important.about": "О нас",
+  "faq.contactUs": "Свяжитесь с нами",
+  "faq.stillQuestions.title": "Остались вопросы?",
+  "faq.stillQuestions.content":
+    "Мы здесь, чтобы помочь! Свяжитесь с нами, и мы ответим как можно скорее.",
+  "faq.whatIsTierList.title": "Что такое Tier List Maker?",
+  "faq.whatIsTierList.content":
+    "Tier List Maker — это веб-инструмент, который позволяет создавать пользовательские списки уровней, загружая изображения и перетаскивая их в разные категории (S, A, B, C, D). Затем вы можете экспортировать список как изображение.",
+  "faq.freeUse.title": "Tier List Maker бесплатный?",
+  "faq.freeUse.content":
+    "Да! Tier List Maker полностью бесплатен. Мы можем показывать рекламу для поддержки разработки и обслуживания сервиса.",
+
+  // Страница конфиденциальности
+  "privacy.title": "Политика конфиденциальности",
+  "privacy.description":
+    "Прочитайте нашу политику конфиденциальности, чтобы понять, как мы собираем, используем и защищаем вашу личную информацию.",
+  "privacy.lastUpdated": "Последнее обновление:",
+  "privacy.intro":
+    "В Tier List Maker мы стремимся защитить вашу конфиденциальность. Эта политика объясняет, как мы собираем, используем и защищаем вашу информацию.",
+
+  // Страница условий
+  "terms.title": "Условия использования",
+  "terms.description":
+    "Прочитайте наши условия использования, чтобы понять правила использования Tier List Maker.",
+  "terms.lastUpdated": "Последнее обновление:",
+  "terms.intro":
+    "Добро пожаловать в Tier List Maker. Эти условия использования регулируют ваше использование нашего веб-сайта и услуг. Используя наш сервис, вы соглашаетесь с этими условиями.",
+
   "nav.home": "Главная",
   "nav.about": "О нас",
   "nav.contact": "Контакты",
@@ -49,6 +141,9 @@ export const translations_ru: { [key: string]: string } = {
   "footer.githubProfile": "Профиль GitHub",
   "footer.disclaimer":
     "Настоятельно рекомендуется проверять информацию, предоставленную на этом веб-сайте, с официальными источниками для обеспечения ее точности.",
+
+  // Страница FAQ
+
   "faq.title": "Часто Задаваемые Вопросы",
   "faq.subtitle":
     "Все, что вам нужно знать о подготовке к экзаменам и отслеживании времени",
@@ -80,6 +175,9 @@ export const translations_ru: { [key: string]: string } = {
   "countdown.seconds": "с",
   "breadcrumb.about": "О нас",
   "breadcrumb.help": "Справка и вопросы",
+
+  // Страница О нас
+
   "about.title": "О TimeKeeper для экзаменов",
   "about.subtitle":
     "Ваш надежный спутник для отслеживания важных дат стандартизированных экзаменов в США с точностью и легкостью",

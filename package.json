@@ -1,6 +1,26 @@
 {
   "name": "tier-list-maker-two",
   "version": "0.1.0",
+  "description": "Create and share your custom tier lists with drag & drop functionality. Multi-language support with 7 languages and Cloudflare deployment.",
+  "keywords": [
+    "tier-list",
+    "drag-drop",
+    "nextjs",
+    "react",
+    "typescript",
+    "multilingual",
+    "cloudflare"
+  ],
+  "author": "SymphonyIceAttack",
+  "license": "MIT",
+  "homepage": "https://tierlistmakertwo.top",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SymphonyIceAttack/tier-list-maker-two.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SymphonyIceAttack/tier-list-maker-two/issues"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",

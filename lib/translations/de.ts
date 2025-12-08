@@ -1,4 +1,97 @@
 export const translations_de: { [key: string]: string } = {
+  // Tier List Maker Übersetzungen
+  "tierlist.title": "Tier List Ersteller",
+  "tierlist.description":
+    "Erstellen und teilen Sie Ihre benutzerdefinierten Tier-Listen",
+  "tierlist.addImages": "Bilder hinzufügen",
+  "tierlist.export": "Exportieren",
+  "tierlist.clearAll": "Alles löschen",
+  "tierlist.unassignedTitle": "Nicht zugewiesene Bilder",
+  "tierlist.unassignedPlaceholder":
+    "Bilder hierher ziehen oder klicken zum Hochladen",
+  "tierlist.tierLabels.S": "S",
+  "tierlist.tierLabels.A": "A",
+  "tierlist.tierLabels.B": "B",
+  "tierlist.tierLabels.C": "C",
+  "tierlist.tierLabels.D": "D",
+  "tierlist.startCreating": "Erstellen beginnen",
+  "tierlist.viewFAQ": "FAQ ansehen",
+  "about.whatwedo.easy_upload": "Einfacher Bild-Upload",
+  "about.whatwedo.easy_upload_content":
+    "Laden Sie schnell mehrere Bilder hoch, um Ihre Tier-Liste zu erstellen",
+  "about.whatwedo.drag_drop": "Drag & Drop Oberfläche",
+  "about.whatwedo.drag_drop_content":
+    "Intuitive Drag & Drop Funktion zum Anordnen von Elementen zwischen Stufen",
+  "about.whatwedo.export": "Export-Optionen",
+  "about.whatwedo.export_content":
+    "Exportieren Sie Ihre Tier-Listen als hochwertige Bilder zum Teilen in sozialen Medien",
+  "about.whatwedo.tiers": "Mehrere Stufen",
+  "about.whatwedo.tiers_content":
+    "Organisieren Sie Elemente in S, A, B, C und D Stufen (oder passen Sie nach Bedarf an)",
+  "about.whatwedo.multilang": "Mehrsprachige Unterstützung",
+  "about.whatwedo.multilang_content":
+    "Verfügbar in Englisch, Chinesisch, Japanisch, Französisch, Spanisch, Deutsch und Russisch",
+  "about.whatwedo.theme": "Dunkles/Helles Design",
+  "about.whatwedo.theme_content":
+    "Wählen Sie Ihr bevorzugtes Design für das beste Seherlebnis",
+  "about.whychoose.content":
+    "Wir glauben, dass das Bewerten und Organisieren von Elementen einfach, schnell und angenehm sein sollte. Unser Tool ist für alle benutzerfreundlich gestaltet.",
+  "about.ourstory.content":
+    "Tier List Maker wurde geschaffen, um das häufige Problem zu lösen, Elemente visuell zu bewerten, ohne komplizierte Software.",
+  "about.contact.title": "Kontaktieren Sie uns",
+  "about.contact.content":
+    "Haben Sie Fragen, Vorschläge oder Feedback? Wir freuen uns von Ihnen zu hören! Besuchen Sie unsere Kontaktseite.",
+
+  // Kontakt Seite
+  "contact.title": "Kontaktieren Sie uns",
+  "contact.subtitle":
+    "Wir freuen uns von Ihnen zu hören! Ob Fragen, Feedback oder einfach ein Hallo – zögern Sie nicht uns zu kontaktieren.",
+  "contact.general.title": "Allgemeine Anfragen",
+  "contact.general.description":
+    "Für allgemeine Fragen zu unserem Service, Funktionsanfragen oder Feedback.",
+  "contact.general.email": "E-Mail:",
+  "contact.support.title": "Support",
+  "contact.support.description":
+    "Brauchen Sie Hilfe bei der Nutzung unserer Plattform? Schauen Sie sich unsere FAQ an oder kontaktieren Sie uns.",
+  "contact.support.button": "FAQ ansehen",
+  "contact.blog.title": "Blog",
+  "contact.blog.description":
+    "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten, Funktionen und Tutorials in unserem Blog.",
+  "contact.blog.button": "Unseren Blog lesen",
+  "contact.social.title": "Soziale Medien",
+  "contact.social.description":
+    "Folgen Sie uns in den sozialen Medien für Updates und Community-Diskussionen.",
+  "contact.social.twitter": "Twitter",
+  "contact.social.github": "GitHub",
+  "contact.important.title": "Weitere wichtige Seiten",
+  "contact.important.about": "Über uns",
+  "faq.contactUs": "Kontaktieren Sie uns",
+  "faq.stillQuestions.title": "Noch Fragen?",
+  "faq.stillQuestions.content":
+    "Wir sind hier um zu helfen! Kontaktieren Sie uns und wir werden so schnell wie möglich antworten.",
+  "faq.whatIsTierList.title": "Was ist Tier List Maker?",
+  "faq.whatIsTierList.content":
+    "Tier List Maker ist ein webbasiertes Tool, mit dem Sie benutzerdefinierte Tier-Listen erstellen können, indem Sie Bilder hochladen und in verschiedene Kategorien (S, A, B, C, D) ziehen. Sie können Ihre Tier-Liste dann als Bild exportieren.",
+  "faq.freeUse.title": "Ist Tier List Maker kostenlos?",
+  "faq.freeUse.content":
+    "Ja! Tier List Maker ist völlig kostenlos. Wir zeigen möglicherweise Werbung an, um die Entwicklung und Wartung des Dienstes zu unterstützen.",
+
+  // Datenschutz Seite
+  "privacy.title": "Datenschutzrichtlinie",
+  "privacy.description":
+    "Lesen Sie unsere Datenschutzrichtlinie, um zu verstehen, wie wir Ihre persönlichen Daten sammeln, verwenden und schützen.",
+  "privacy.lastUpdated": "Letzte Aktualisierung:",
+  "privacy.intro":
+    "Bei Tier List Maker verpflichten wir uns, Ihre Privatsphäre zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen.",
+
+  // AGB Seite
+  "terms.title": "Nutzungsbedingungen",
+  "terms.description":
+    "Lesen Sie unsere Nutzungsbedingungen, um die Regeln für die Nutzung von Tier List Maker zu verstehen.",
+  "terms.lastUpdated": "Letzte Aktualisierung:",
+  "terms.intro":
+    "Willkommen bei Tier List Maker. Diese Nutzungsbedingungen regeln Ihre Nutzung unserer Website und Dienste. Mit der Nutzung unseres Dienstes stimmen Sie diesen Bedingungen zu.",
+
   "nav.home": "Startseite",
   "nav.about": "Über uns",
   "nav.contact": "Kontakt",
@@ -49,6 +142,9 @@ export const translations_de: { [key: string]: string } = {
   "footer.githubProfile": "GitHub-Profil",
   "footer.disclaimer":
     "Es wird dringend empfohlen, die auf dieser Website bereitgestellten Informationen mit offiziellen Quellen zu überprüfen, um ihre Genauigkeit zu gewährleisten.",
+
+  // FAQ Seite
+
   "faq.title": "Häufig Gestellte Fragen",
   "faq.subtitle":
     "Alles, was Sie über Prüfungsvorbereitung und Zeitverfolgung wissen müssen",
@@ -80,6 +176,9 @@ export const translations_de: { [key: string]: string } = {
   "countdown.seconds": "Sek",
   "breadcrumb.about": "Über uns",
   "breadcrumb.help": "Hilfe & FAQ",
+
+  // Über uns Seite
+
   "about.title": "Über Exam TimeKeeper",
   "about.subtitle":
     "Ihr vertrauenswürdiger Begleiter zur Verfolgung wichtiger US-standardisierter Prüfungstermine mit Präzision und Leichtigkeit",

@@ -1,4 +1,99 @@
 export const translations_fr: { [key: string]: string } = {
+  // Tier List Maker Traductions
+  "tierlist.title": "Créateur de Tier List",
+  "tierlist.description": "Créez et partagez vos tier lists personnalisées",
+  "tierlist.addImages": "Ajouter des images",
+  "tierlist.export": "Exporter",
+  "tierlist.clearAll": "Tout effacer",
+  "tierlist.unassignedTitle": "Images non attribuées",
+  "tierlist.unassignedPlaceholder":
+    "Glissez des images ici ou cliquez pour télécharger",
+  "tierlist.tierLabels.S": "S",
+  "tierlist.tierLabels.A": "A",
+  "tierlist.tierLabels.B": "B",
+  "tierlist.tierLabels.C": "C",
+  "tierlist.tierLabels.D": "D",
+  "tierlist.startCreating": "Commencer à créer",
+  "tierlist.viewFAQ": "Voir la FAQ",
+  "about.whatwedo.easy_upload": "Téléchargement d'images facile",
+  "about.whatwedo.easy_upload_content":
+    "Téléchargez rapidement plusieurs images pour commencer à créer votre tier list",
+  "about.whatwedo.drag_drop": "Interface glisser-déposer",
+  "about.whatwedo.drag_drop_content":
+    "Fonctionnalité intuitive de glisser-déposer pour organiser les éléments entre les niveaux",
+  "about.whatwedo.export": "Options d'exportation",
+  "about.whatwedo.export_content":
+    "Exportez vos tier lists en images haute qualité pour partager sur les réseaux sociaux",
+  "about.whatwedo.tiers": "Plusieurs niveaux",
+  "about.whatwedo.tiers_content":
+    "Organisez les éléments en niveaux S, A, B, C et D (ou personnalisez selon vos besoins)",
+  "about.whatwedo.multilang": "Support multilingue",
+  "about.whatwedo.multilang_content":
+    "Disponible en anglais, chinois, japonais, français, espagnol, allemand et russe",
+  "about.whatwedo.theme": "Thème sombre/clair",
+  "about.whatwedo.theme_content":
+    "Choisissez votre thème préféré pour une meilleure expérience",
+  "about.whychoose.content":
+    "Nous croyons que le classement et l'organisation d'éléments devrait être simple, rapide et agréable. Notre outil est conçu pour être convivial pour tous. Nous améliorons continuellement notre plateforme basée sur les retours utilisateurs.",
+  "about.ourstory.content":
+    "Tier List Maker a été créé pour résoudre le problème courant de vouloir classer visuellement des éléments sans logiciel compliqué. Nous avons construit une solution à la fois puissante et simple à utiliser.",
+  "about.contact.title": "Contactez-nous",
+  "about.contact.content":
+    "Des questions, suggestions ou commentaires ? Nous aimerions avoir de vos nouvelles ! Visitez notre page Contact.",
+
+  // Page Contact
+  "contact.title": "Contactez-nous",
+  "contact.subtitle":
+    "Nous serions ravis d'avoir de vos nouvelles ! Questions, commentaires ou juste un bonjour, n'hésitez pas à nous contacter.",
+  "contact.general.title": "Demandes générales",
+  "contact.general.description":
+    "Pour les questions générales sur notre service, les demandes de fonctionnalités ou les commentaires.",
+  "contact.general.email": "Email :",
+  "contact.support.title": "Support",
+  "contact.support.description":
+    "Besoin d'aide pour utiliser notre plateforme ? Consultez notre FAQ ou contactez-nous.",
+  "contact.support.button": "Voir la FAQ",
+  "contact.blog.title": "Blog",
+  "contact.blog.description":
+    "Restez informé des dernières nouvelles, fonctionnalités et tutoriels sur notre blog.",
+  "contact.blog.button": "Lire notre blog",
+  "contact.social.title": "Réseaux sociaux",
+  "contact.social.description":
+    "Suivez-nous sur les réseaux sociaux pour les mises à jour et discussions communautaires.",
+  "contact.social.twitter": "Twitter",
+  "contact.social.github": "GitHub",
+  "contact.important.title": "Autres pages importantes",
+  "contact.important.about": "À propos de nous",
+  "faq.contactUs": "Contactez-nous",
+  "faq.stillQuestions.title": "Encore des questions ?",
+  "faq.stillQuestions.content":
+    "Nous sommes là pour aider ! Contactez-nous et nous vous répondrons dès que possible.",
+  "faq.whatIsTierList.title": "Qu'est-ce que Tier List Maker ?",
+  "faq.whatIsTierList.content":
+    "Tier List Maker est un outil web qui vous permet de créer des tier lists personnalisées en téléchargeant des images et en les faisant glisser dans différentes catégories (S, A, B, C, D). Vous pouvez ensuite exporter votre tier list en image pour la partager.",
+  "faq.uploadImages.title": "Comment télécharger des images ?",
+  "faq.uploadImages.content":
+    "Cliquez sur le bouton 'Ajouter des images' sur la page principale, puis sélectionnez plusieurs images depuis votre appareil. Les images apparaîtront dans la section 'Images non attribuées'.",
+  "faq.freeUse.title": "Tier List Maker est-il gratuit ?",
+  "faq.freeUse.content":
+    "Oui ! Tier List Maker est entièrement gratuit. Nous pouvons afficher des publicités pour soutenir le développement et la maintenance du service.",
+
+  // Page Confidentialité
+  "privacy.title": "Politique de confidentialité",
+  "privacy.description":
+    "Lisez notre politique de confidentialité pour comprendre comment nous collectons, utilisons et protégeons vos informations personnelles.",
+  "privacy.lastUpdated": "Dernière mise à jour :",
+  "privacy.intro":
+    "Chez Tier List Maker, nous nous engageons à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations.",
+
+  // Page Conditions
+  "terms.title": "Conditions d'utilisation",
+  "terms.description":
+    "Lisez nos conditions d'utilisation pour comprendre les règles d'utilisation de Tier List Maker.",
+  "terms.lastUpdated": "Dernière mise à jour :",
+  "terms.intro":
+    "Bienvenue sur Tier List Maker. Ces conditions d'utilisation régissent votre utilisation de notre site web et de nos services. En utilisant notre service, vous acceptez d'être lié par ces conditions.",
+
   "nav.home": "Accueil",
   "nav.about": "À propos",
   "nav.contact": "Contact",
@@ -49,6 +144,9 @@ export const translations_fr: { [key: string]: string } = {
   "footer.githubProfile": "Profil GitHub",
   "footer.disclaimer":
     "Il est fortement recommandé de vérifier les informations fournies sur ce site web avec les sources officielles pour assurer leur précision.",
+
+  // Page FAQ
+
   "faq.title": "Questions Fréquemment Posées",
   "faq.subtitle":
     "Tout ce que vous devez savoir sur la préparation des examens et le suivi du temps",
@@ -81,6 +179,9 @@ export const translations_fr: { [key: string]: string } = {
   "countdown.seconds": "s",
   "breadcrumb.about": "À propos",
   "breadcrumb.help": "Aide et FAQ",
+
+  // Page À propos
+
   "about.title": "À propos d'Exam TimeKeeper",
   "about.subtitle":
     "Votre compagnon de confiance pour suivre les dates importantes des examens standardisés américains avec précision et facilité",

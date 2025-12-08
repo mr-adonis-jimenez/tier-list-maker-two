@@ -1,14 +1,35 @@
 import type { Metadata } from "next";
 import { StructuredData } from "@/components/structured-data";
+import { defaultLocale } from "@/lib/constants";
+import { type LanguageType, translations } from "@/lib/translations";
 import { FAQClient } from "./faq-client";
 
-export const metadata: Metadata = {
-  title: "FAQ - Tier List Maker",
-  description:
-    "Frequently asked questions about Tier List Maker. Find answers to common questions about features, usage, and troubleshooting.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale = lang as LanguageType;
+  const dict = translations[locale] || translations[defaultLocale];
 
-export default function FAQPage() {
+  return {
+    title: `${dict["faq.title"] || "FAQ"} - Tier List Maker`,
+    description:
+      dict["faq.subtitle"] ||
+      "Frequently asked questions about Tier List Maker. Find answers to common questions about features, usage, and troubleshooting.",
+  };
+}
+
+export default async function FAQPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale = lang as LanguageType;
+  const dict = translations[locale] || translations[defaultLocale];
+
   return (
     <>
       <StructuredData
@@ -22,7 +43,7 @@ export default function FAQPage() {
             "Frequently asked questions about Tier List Maker. Find answers to common questions about features, usage, and troubleshooting.",
         }}
       />
-      <FAQClient />
+      <FAQClient locale={lang} dict={dict} />
     </>
   );
 }

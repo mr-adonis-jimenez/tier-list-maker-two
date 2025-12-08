@@ -1,4 +1,108 @@
 export const translations_zh: { [key: string]: string } = {
+  // Tier List Maker 翻译
+  "tierlist.title": "Tier List 制作器",
+  "tierlist.description": "创建并分享您的自定义等级列表",
+  "tierlist.addImages": "添加图片",
+  "tierlist.export": "导出",
+  "tierlist.clearAll": "清空全部",
+  "tierlist.unassignedTitle": "未分配图片",
+  "tierlist.unassignedPlaceholder": "将图片拖到这里或点击上传",
+  "tierlist.tierLabels.S": "S",
+  "tierlist.tierLabels.A": "A",
+  "tierlist.tierLabels.B": "B",
+  "tierlist.tierLabels.C": "C",
+  "tierlist.tierLabels.D": "D",
+  "tierlist.startCreating": "开始创建",
+  "tierlist.viewFAQ": "查看常见问题",
+  "about.whatwedo.easy_upload": "简易图片上传",
+  "about.whatwedo.easy_upload_content": "快速上传多张图片开始创建您的等级列表",
+  "about.whatwedo.drag_drop": "拖放界面",
+  "about.whatwedo.drag_drop_content":
+    "直观的拖放功能让您轻松将项目排列到各个等级",
+  "about.whatwedo.export": "导出选项",
+  "about.whatwedo.export_content":
+    "将您的等级列表导出为高质量图片，方便在社交媒体分享或个人保存",
+  "about.whatwedo.tiers": "多级别分类",
+  "about.whatwedo.tiers_content":
+    "将项目组织到 S、A、B、C 和 D 等级（或按需自定义）",
+  "about.whatwedo.multilang": "多语言支持",
+  "about.whatwedo.multilang_content":
+    "支持英语、中文、日语、法语、西班牙语、德语和俄语",
+  "about.whatwedo.theme": "深色/浅色主题",
+  "about.whatwedo.theme_content": "选择您喜欢的主题以获得最佳浏览体验",
+  "about.whychoose.content":
+    "我们相信，排名和整理事物应该简单、快速且有趣。我们的工具专为每个人设计，从普通用户到专业人士都能轻松使用。",
+  "about.ourstory.content":
+    "Tier List 制作器的诞生源于一个常见问题：人们想要以视觉方式对事物进行排名，但不想使用复杂的软件。",
+  "about.contact.title": "联系我们",
+  "about.contact.content":
+    "有问题、建议或反馈？我们很乐意听取您的意见！请访问我们的联系页面与我们取得联系。",
+
+  // 联系页面
+  "contact.title": "联系我们",
+  "contact.subtitle":
+    "我们很乐意收到您的来信！无论您有问题、反馈，还是只是想打个招呼，请随时联系我们。",
+  "contact.general.title": "一般咨询",
+  "contact.general.description": "如有关于服务、功能请求或反馈的一般问题。",
+  "contact.general.email": "电子邮件：",
+  "contact.support.title": "支持",
+  "contact.support.description":
+    "需要使用平台的帮助？查看我们的常见问题或联系我们获取帮助。",
+  "contact.support.button": "查看常见问题",
+  "contact.blog.title": "博客",
+  "contact.blog.description": "在我们的博客上了解最新的新闻、功能和教程。",
+  "contact.blog.button": "阅读博客",
+  "contact.social.title": "社交媒体",
+  "contact.social.description": "在社交媒体上关注我们，获取更新和社区讨论。",
+  "contact.social.twitter": "Twitter",
+  "contact.social.github": "GitHub",
+  "contact.important.title": "其他重要页面",
+  "contact.important.about": "关于我们",
+  "faq.contactUs": "联系我们",
+  "faq.stillQuestions.title": "还有问题？",
+  "faq.stillQuestions.content":
+    "我们随时为您提供帮助！联系我们，我们会尽快回复您。",
+  "faq.whatIsTierList.title": "什么是 Tier List 制作器？",
+  "faq.whatIsTierList.content":
+    "Tier List 制作器是一个基于网页的工具，允许您通过上传图片并将其拖放到不同的等级类别（S、A、B、C、D）来创建自定义等级列表。",
+  "faq.uploadImages.title": "如何上传图片？",
+  "faq.uploadImages.content":
+    "点击主页上的「添加图片」按钮，然后从您的设备中选择多张图片。",
+  "faq.dragToTiers.title": "如何将图片拖到等级中？",
+  "faq.dragToTiers.content": "只需点击并按住图片，然后将其拖到所需的等级。",
+  "faq.removeImages.title": "我可以从等级中移除图片吗？",
+  "faq.removeImages.content":
+    "可以！等级中的每张图片右上角都有一个小垃圾桶图标，您可以点击它来移除图片。",
+  "faq.exportImage.title": "如何将等级列表导出为图片？",
+  "faq.exportImage.content":
+    "在等级中排列好图片后，点击「导出图片」按钮。这将生成您的等级列表的 PNG 图片。",
+  "faq.imageLimit.title": "上传图片有数量限制吗？",
+  "faq.imageLimit.content":
+    "没有严格限制，但我们建议上传合理数量的图片以获得最佳性能。",
+  "faq.imageStorage.title": "我的图片会存储在您的服务器上吗？",
+  "faq.imageStorage.content":
+    "不会，您的图片在浏览器中本地处理，不会存储在我们的服务器上。",
+  "faq.mobileUse.title": "我可以在移动设备上使用吗？",
+  "faq.mobileUse.content":
+    "可以！Tier List 制作器完全响应式，适用于桌面和移动设备。",
+  "faq.freeUse.title": "Tier List 制作器免费使用吗？",
+  "faq.freeUse.content": "是的！Tier List 制作器完全免费使用。",
+
+  // 隐私政策页面
+  "privacy.title": "隐私政策",
+  "privacy.description":
+    "阅读我们的隐私政策，了解我们如何收集、使用和保护您的个人信息。",
+  "privacy.lastUpdated": "最后更新：",
+  "privacy.intro": "在 Tier List 制作器，我们致力于保护您的隐私。",
+
+  // 服务条款页面
+  "terms.title": "服务条款",
+  "terms.description":
+    "阅读我们的服务条款，了解使用 Tier List 制作器的规则和指南。",
+  "terms.lastUpdated": "最后更新：",
+  "terms.intro":
+    "欢迎使用 Tier List 制作器。本服务条款规定您使用我们网站和服务的条件。",
+
   "nav.home": "首页",
   "nav.about": "关于",
   "nav.contact": "联系",
@@ -45,6 +149,9 @@ export const translations_zh: { [key: string]: string } = {
   "footer.sourceCode": "源代码",
   "footer.githubProfile": "GitHub 个人资料",
   "footer.disclaimer": "强烈建议您与官方来源核实本网站提供的信息以确保准确性。",
+
+  // 常见问题页面 - Tier List Maker
+
   "faq.title": "常见问题解答",
   "faq.subtitle": "关于考试准备和时间追踪您需要了解的一切",
   "faq.dataSource.title": "考试数据来源是什么？",
@@ -74,6 +181,9 @@ export const translations_zh: { [key: string]: string } = {
   "countdown.seconds": "秒",
   "breadcrumb.about": "关于我们",
   "breadcrumb.help": "帮助和常见问题",
+
+  // 关于页面 - Tier List Maker
+
   "about.title": "关于考试时间管理器",
   "about.subtitle": "您追踪重要美国标准化考试日期的可靠助手，操作简便且精准",
   "about.mission.title": "我们的使命",

@@ -1,4 +1,134 @@
 export const translations_ja: { [key: string]: string } = {
+  // Tier List Maker 翻訳
+  "tierlist.title": "ティアリストメーカー",
+  "tierlist.description": "カスタムティアリストを作成して共有",
+  "tierlist.addImages": "画像を追加",
+  "tierlist.export": "エクスポート",
+  "tierlist.clearAll": "すべてクリア",
+  "tierlist.unassignedTitle": "未割り当ての画像",
+  "tierlist.unassignedPlaceholder":
+    "ここに画像をドラッグするか、クリックしてアップロード",
+  "tierlist.tierLabels.S": "S",
+  "tierlist.tierLabels.A": "A",
+  "tierlist.tierLabels.B": "B",
+  "tierlist.tierLabels.C": "C",
+  "tierlist.tierLabels.D": "D",
+  "tierlist.startCreating": "作成を開始",
+  "tierlist.viewFAQ": "FAQを見る",
+  "about.whatwedo.easy_upload": "簡単な画像アップロード",
+  "about.whatwedo.easy_upload_content":
+    "複数の画像をすばやくアップロードしてティアリストの作成を開始",
+  "about.whatwedo.drag_drop": "ドラッグ＆ドロップインターフェース",
+  "about.whatwedo.drag_drop_content":
+    "直感的なドラッグ＆ドロップ機能でアイテムをティア間で簡単に配置",
+  "about.whatwedo.export": "エクスポートオプション",
+  "about.whatwedo.export_content":
+    "ティアリストを高品質の画像としてエクスポートし、SNSで共有したり個人用に保存",
+  "about.whatwedo.tiers": "複数のティア",
+  "about.whatwedo.tiers_content":
+    "アイテムをS、A、B、C、Dのティアに整理（またはカスタマイズ可能）",
+  "about.whatwedo.multilang": "多言語サポート",
+  "about.whatwedo.multilang_content":
+    "英語、中国語、日本語、フランス語、スペイン語、ドイツ語、ロシア語に対応",
+  "about.whatwedo.theme": "ダーク/ライトテーマ",
+  "about.whatwedo.theme_content": "最適な表示体験のためにお好みのテーマを選択",
+  "about.whychoose.content":
+    "アイテムのランキングと整理は、シンプルで速く、楽しいものであるべきだと私たちは考えています。私たちのツールは、カジュアルユーザーからプロフェッショナルまで、誰もが使いやすいように設計されています。ユーザーフィードバックに基づいて継続的にプラットフォームを改善し、最高の体験を提供します。",
+  "about.ourstory.content":
+    "ティアリストメーカーは、複雑なソフトウェアを使わずにアイテムを視覚的にランキングしたいという一般的な問題を解決するために作られました。既存のソリューションは複雑すぎるか、簡単なエクスポートや共有オプションなどの重要な機能が欠けていました。そこで私たちは、強力でありながら使いやすいソリューションを構築しました。",
+  "about.contact.title": "お問い合わせ",
+  "about.contact.content":
+    "質問、提案、フィードバックがありますか？ぜひお聞かせください！お問い合わせページからご連絡ください。",
+
+  // お問い合わせページ
+  "contact.title": "お問い合わせ",
+  "contact.subtitle":
+    "ご連絡をお待ちしております！質問、フィードバック、または単にご挨拶でも、お気軽にご連絡ください。",
+  "contact.general.title": "一般的なお問い合わせ",
+  "contact.general.description":
+    "サービスに関する一般的な質問、機能リクエスト、フィードバックについて。",
+  "contact.general.email": "メール：",
+  "contact.support.title": "サポート",
+  "contact.support.description":
+    "プラットフォームの使用についてヘルプが必要ですか？FAQをご覧いただくか、サポートにお問い合わせください。",
+  "contact.support.button": "FAQを見る",
+  "contact.blog.title": "ブログ",
+  "contact.blog.description":
+    "最新のニュース、機能、チュートリアルをブログでチェック。",
+  "contact.blog.button": "ブログを読む",
+  "contact.social.title": "ソーシャルメディア",
+  "contact.social.description":
+    "最新情報やコミュニティディスカッションのためにSNSでフォロー。",
+  "contact.social.twitter": "Twitter",
+  "contact.social.github": "GitHub",
+  "contact.important.title": "その他の重要なページ",
+  "contact.important.about": "会社概要",
+  "faq.contactUs": "お問い合わせ",
+  "faq.stillQuestions.title": "まだ質問がありますか？",
+  "faq.stillQuestions.content":
+    "お手伝いします！ご連絡いただければ、できるだけ早くお返事します。",
+  "faq.whatIsTierList.title": "ティアリストメーカーとは？",
+  "faq.whatIsTierList.content":
+    "ティアリストメーカーは、画像をアップロードして異なるティアカテゴリ（S、A、B、C、D）にドラッグすることで、カスタムティアリストを作成できるウェブベースのツールです。作成したティアリストを画像としてエクスポートして共有できます。",
+  "faq.uploadImages.title": "画像をアップロードするには？",
+  "faq.uploadImages.content":
+    "メインページの「画像を追加」ボタンをクリックし、デバイスから複数の画像を選択します。画像は「未割り当ての画像」セクションに表示され、適切なティアにドラッグできます。",
+  "faq.dragToTiers.title": "画像をティアにドラッグするには？",
+  "faq.dragToTiers.content":
+    "画像をクリックして押し続け、目的のティアにドラッグするだけです。マウスを離す（またはモバイルで指を離す）と、画像がそのティアに配置されます。",
+  "faq.removeImages.title": "ティアから画像を削除できますか？",
+  "faq.removeImages.content":
+    "はい！ティア内の各画像の右上にある小さなゴミ箱アイコンをクリックして削除できます。または、画像を「未割り当ての画像」セクションにドラッグして戻すこともできます。",
+  "faq.exportImage.title": "ティアリストを画像としてエクスポートするには？",
+  "faq.exportImage.content":
+    "ティアに画像を配置した後、「画像をエクスポート」ボタンをクリックします。ティアリストのPNG画像が生成され、デバイスに保存したりオンラインで共有したりできます。",
+  "faq.imageLimit.title": "アップロードできる画像の数に制限はありますか？",
+  "faq.imageLimit.content":
+    "厳密な制限はありませんが、最高のパフォーマンスを得るために、適度な数の画像をアップロードすることをお勧めします。極端に多くの画像はアプリケーションを遅くする可能性があります。",
+  "faq.imageStorage.title": "画像はサーバーに保存されますか？",
+  "faq.imageStorage.content":
+    "いいえ、画像はブラウザでローカルに処理され、サーバーには保存されません。画像としてエクスポートしない限り、ティアリストは保存されません。",
+  "faq.mobileUse.title": "モバイルデバイスで使用できますか？",
+  "faq.mobileUse.content":
+    "はい！ティアリストメーカーは完全にレスポンシブで、デスクトップとモバイルデバイスの両方で動作します。モバイルではタッチジェスチャーで画像をドラッグ＆ドロップできます。",
+  "faq.imageFormats.title": "どの画像形式がサポートされていますか？",
+  "faq.imageFormats.content":
+    "JPG、PNG、GIF、WebPを含むすべての一般的な画像形式をサポートしています。ティアリストをエクスポートする際に必要に応じて画像は自動的に変換されます。",
+  "faq.clearAll.title": "すべての画像をクリアしてやり直すには？",
+  "faq.clearAll.content":
+    "ページ上部の「すべてクリア」ボタンをクリックします。これにより、すべてのティアと未割り当てセクションからすべての画像が削除されます。",
+  "faq.tierLabels.title": "ティアラベルを変更できますか？",
+  "faq.tierLabels.content":
+    "デフォルトのティアラベルはS、A、B、C、Dです。アプリケーション設定でカスタマイズするか、コードにアクセスできる場合は変更できます。",
+  "faq.freeUse.title": "ティアリストメーカーは無料で使用できますか？",
+  "faq.freeUse.content":
+    "はい！ティアリストメーカーは完全に無料で使用できます。サービスの開発と維持をサポートするために広告を表示する場合があります。",
+  "faq.bugReport.title": "バグを報告したり機能をリクエストするには？",
+  "faq.bugReport.content":
+    "お問い合わせページにアクセスして、バグまたは機能リクエストの詳細をメールでお送りください。フィードバックをお待ちしております！",
+  "faq.socialShare.title": "ティアリストをSNSで共有できますか？",
+  "faq.socialShare.content":
+    "もちろん！ティアリストを画像としてエクスポートした後、Twitter、Facebook、Instagramなど、どのSNSプラットフォームでも共有できます。",
+  "faq.blurryImages.title": "エクスポートした画像がぼやけているのはなぜ？",
+  "faq.blurryImages.content":
+    "エクスポート機能はデフォルトで高品質設定を使用します。画像がぼやけて見える場合は、ページを更新して再度エクスポートしてみてください。非常に小さい画像は高解像度でエクスポートされない場合があります。",
+
+  // プライバシーポリシーページ
+  "privacy.title": "プライバシーポリシー",
+  "privacy.description":
+    "プライバシーポリシーを読んで、私たちがどのように個人情報を収集、使用、保護するかをご理解ください。",
+  "privacy.lastUpdated": "最終更新：",
+  "privacy.intro":
+    "ティアリストメーカーでは、あなたのプライバシーを保護することをお約束します。このプライバシーポリシーは、当サイトおよびサービスをご利用いただく際に、私たちがどのようにあなたの情報を収集、使用、保護するかを説明しています。",
+
+  // 利用規約ページ
+  "terms.title": "利用規約",
+  "terms.description":
+    "利用規約を読んで、ティアリストメーカーを使用するためのルールとガイドラインをご理解ください。",
+  "terms.lastUpdated": "最終更新：",
+  "terms.intro":
+    "ティアリストメーカーへようこそ。この利用規約は、当サイトおよびサービスのご利用に関する条件を定めています。サービスをご利用いただくことで、これらの規約に同意したものとみなされます。",
+
   "nav.home": "ホーム",
   "nav.about": "概要",
   "nav.contact": "お問い合わせ",
@@ -48,6 +178,9 @@ export const translations_ja: { [key: string]: string } = {
   "footer.githubProfile": "GitHubプロフィール",
   "footer.disclaimer":
     "この网站上提供的情報の正確性を確認するために、公式のソースで確認することを強くお勧めします。",
+
+  // FAQページ
+
   "faq.title": "よくある質問",
   "faq.subtitle": "試験準備と時間追跡について知るべきすべてのこと",
   "faq.dataSource.title": "試験データの出所はどこですか？",
@@ -78,6 +211,9 @@ export const translations_ja: { [key: string]: string } = {
   "countdown.seconds": "秒",
   "breadcrumb.about": "会社概要",
   "breadcrumb.help": "ヘルプとFAQ",
+
+  // Aboutページ
+
   "about.title": "Exam TimeKeeperについて",
   "about.subtitle":
     "重要な米国標準化試験の日付を正確かつ簡単に追跡する信頼できる相棒",

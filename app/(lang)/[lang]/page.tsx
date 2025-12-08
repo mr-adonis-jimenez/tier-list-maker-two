@@ -38,20 +38,21 @@ export default async function LocalePage({ params }: PageProps) {
   const dict = translations[locale] || translations[defaultLocale];
 
   const dictionary = {
-    title: "Tier List Maker",
+    title: dict["tierlist.title"] || "Tier List Maker",
     description:
-      dict["app.hero.subtitle"] || "Create and share your custom tier lists",
-    addImages: "Add Images",
-    export: "Export",
-    clearAll: "Clear All",
-    unassignedTitle: "Unassigned",
-    unassignedPlaceholder: "Drag images here",
+      dict["tierlist.description"] || "Create and share your custom tier lists",
+    addImages: dict["tierlist.addImages"] || "Add Images",
+    export: dict["tierlist.export"] || "Export",
+    clearAll: dict["tierlist.clearAll"] || "Clear All",
+    unassignedTitle: dict["tierlist.unassignedTitle"] || "Unassigned",
+    unassignedPlaceholder:
+      dict["tierlist.unassignedPlaceholder"] || "Drag images here",
     tierLabels: {
-      S: "S Tier",
-      A: "A Tier",
-      B: "B Tier",
-      C: "C Tier",
-      D: "D Tier",
+      S: dict["tierlist.tierLabels.S"] || "S",
+      A: dict["tierlist.tierLabels.A"] || "A",
+      B: dict["tierlist.tierLabels.B"] || "B",
+      C: dict["tierlist.tierLabels.C"] || "C",
+      D: dict["tierlist.tierLabels.D"] || "D",
     },
     blog: "Blog",
   };

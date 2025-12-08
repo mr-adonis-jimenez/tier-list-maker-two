@@ -13,11 +13,11 @@ export default function RootPage() {
     unassignedTitle: "Unassigned",
     unassignedPlaceholder: "Drag images here",
     tierLabels: {
-      S: "S Tier",
-      A: "A Tier",
-      B: "B Tier",
-      C: "C Tier",
-      D: "D Tier",
+      S: "S",
+      A: "A",
+      B: "B",
+      C: "C",
+      D: "D",
     },
     blog: "Blog",
   };

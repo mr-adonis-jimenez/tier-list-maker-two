@@ -1,4 +1,96 @@
 export const translations_es: { [key: string]: string } = {
+  // Tier List Maker Traducciones
+  "tierlist.title": "Creador de Tier List",
+  "tierlist.description": "Crea y comparte tus tier lists personalizadas",
+  "tierlist.addImages": "Agregar imágenes",
+  "tierlist.export": "Exportar",
+  "tierlist.clearAll": "Borrar todo",
+  "tierlist.unassignedTitle": "Imágenes sin asignar",
+  "tierlist.unassignedPlaceholder":
+    "Arrastra imágenes aquí o haz clic para subir",
+  "tierlist.tierLabels.S": "S",
+  "tierlist.tierLabels.A": "A",
+  "tierlist.tierLabels.B": "B",
+  "tierlist.tierLabels.C": "C",
+  "tierlist.tierLabels.D": "D",
+  "tierlist.startCreating": "Empezar a crear",
+  "tierlist.viewFAQ": "Ver FAQ",
+  "about.whatwedo.easy_upload": "Carga de imágenes fácil",
+  "about.whatwedo.easy_upload_content":
+    "Sube rápidamente múltiples imágenes para empezar a crear tu tier list",
+  "about.whatwedo.drag_drop": "Interfaz de arrastrar y soltar",
+  "about.whatwedo.drag_drop_content":
+    "Funcionalidad intuitiva de arrastrar y soltar para organizar elementos entre niveles",
+  "about.whatwedo.export": "Opciones de exportación",
+  "about.whatwedo.export_content":
+    "Exporta tus tier lists como imágenes de alta calidad para compartir en redes sociales",
+  "about.whatwedo.tiers": "Múltiples niveles",
+  "about.whatwedo.tiers_content":
+    "Organiza elementos en niveles S, A, B, C y D (o personaliza según necesites)",
+  "about.whatwedo.multilang": "Soporte multilingüe",
+  "about.whatwedo.multilang_content":
+    "Disponible en inglés, chino, japonés, francés, español, alemán y ruso",
+  "about.whatwedo.theme": "Tema oscuro/claro",
+  "about.whatwedo.theme_content":
+    "Elige tu tema preferido para la mejor experiencia visual",
+  "about.whychoose.content":
+    "Creemos que clasificar y organizar elementos debe ser simple, rápido y divertido. Nuestra herramienta está diseñada para ser fácil de usar para todos.",
+  "about.ourstory.content":
+    "Tier List Maker fue creado para resolver el problema común de querer clasificar elementos visualmente sin software complicado.",
+  "about.contact.title": "Contáctanos",
+  "about.contact.content":
+    "¿Tienes preguntas, sugerencias o comentarios? ¡Nos encantaría saber de ti! Visita nuestra página de contacto.",
+
+  // Página de contacto
+  "contact.title": "Contáctanos",
+  "contact.subtitle":
+    "¡Nos encantaría saber de ti! Ya sea que tengas preguntas, comentarios o simplemente quieras saludar, no dudes en contactarnos.",
+  "contact.general.title": "Consultas generales",
+  "contact.general.description":
+    "Para preguntas generales sobre nuestro servicio, solicitudes de funciones o comentarios.",
+  "contact.general.email": "Correo electrónico:",
+  "contact.support.title": "Soporte",
+  "contact.support.description":
+    "¿Necesitas ayuda usando nuestra plataforma? Consulta nuestra FAQ o contáctanos.",
+  "contact.support.button": "Ver FAQ",
+  "contact.blog.title": "Blog",
+  "contact.blog.description":
+    "Mantente actualizado con las últimas noticias, funciones y tutoriales en nuestro blog.",
+  "contact.blog.button": "Leer nuestro blog",
+  "contact.social.title": "Redes sociales",
+  "contact.social.description":
+    "Síguenos en redes sociales para actualizaciones y discusiones de la comunidad.",
+  "contact.social.twitter": "Twitter",
+  "contact.social.github": "GitHub",
+  "contact.important.title": "Otras páginas importantes",
+  "contact.important.about": "Sobre nosotros",
+  "faq.contactUs": "Contáctanos",
+  "faq.stillQuestions.title": "¿Aún tienes preguntas?",
+  "faq.stillQuestions.content":
+    "¡Estamos aquí para ayudar! Contáctanos y te responderemos lo antes posible.",
+  "faq.whatIsTierList.title": "¿Qué es Tier List Maker?",
+  "faq.whatIsTierList.content":
+    "Tier List Maker es una herramienta web que te permite crear tier lists personalizadas subiendo imágenes y arrastrándolas a diferentes categorías (S, A, B, C, D). Luego puedes exportar tu tier list como imagen para compartir.",
+  "faq.freeUse.title": "¿Tier List Maker es gratis?",
+  "faq.freeUse.content":
+    "¡Sí! Tier List Maker es completamente gratis. Podemos mostrar anuncios para apoyar el desarrollo y mantenimiento del servicio.",
+
+  // Página de privacidad
+  "privacy.title": "Política de privacidad",
+  "privacy.description":
+    "Lee nuestra política de privacidad para entender cómo recopilamos, usamos y protegemos tu información personal.",
+  "privacy.lastUpdated": "Última actualización:",
+  "privacy.intro":
+    "En Tier List Maker, nos comprometemos a proteger tu privacidad. Esta política de privacidad explica cómo recopilamos, usamos y protegemos tu información.",
+
+  // Página de términos
+  "terms.title": "Términos de servicio",
+  "terms.description":
+    "Lee nuestros términos de servicio para entender las reglas de uso de Tier List Maker.",
+  "terms.lastUpdated": "Última actualización:",
+  "terms.intro":
+    "Bienvenido a Tier List Maker. Estos términos de servicio rigen el uso de nuestro sitio web y servicios. Al usar nuestro servicio, aceptas estar sujeto a estos términos.",
+
   "nav.home": "Inicio",
   "nav.about": "Acerca de",
   "nav.contact": "Contacto",
@@ -49,6 +141,9 @@ export const translations_es: { [key: string]: string } = {
   "footer.githubProfile": "Perfil de GitHub",
   "footer.disclaimer":
     "Se recomienda strongly verificar la información proporcionada en este sitio web con fuentes oficiales para asegurar su precisión.",
+
+  // Página FAQ
+
   "faq.title": "Preguntas Frecuentes",
   "faq.subtitle":
     "Todo lo que necesitas saber sobre la preparación de exámenes y el seguimiento del tiempo",
@@ -80,6 +175,9 @@ export const translations_es: { [key: string]: string } = {
   "countdown.seconds": "s",
   "breadcrumb.about": "Acerca de",
   "breadcrumb.help": "Ayuda y preguntas frecuentes",
+
+  // Página Acerca de
+
   "about.title": "Acerca de Exam TimeKeeper",
   "about.subtitle":
     "Su compañero de confianza para rastrear fechas importantes de exámenes estandarizados estadounidenses con precisión y facilidad",

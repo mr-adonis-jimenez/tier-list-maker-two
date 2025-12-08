@@ -13,7 +13,7 @@ import {
 } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
 import html2canvas from "html2canvas";
-import { BookOpen, Download, Trash2, Upload } from "lucide-react";
+import { BookOpen, Download, ExternalLink, Trash2, Upload } from "lucide-react";
 import Link from "next/link";
 import type React from "react";
 import { useRef, useState } from "react";
@@ -165,6 +165,11 @@ const TierListMaker = ({ dictionary, locale }: TierListMakerProps) => {
   } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const tierListRef = useRef<HTMLDivElement>(null);
+
+  // Generate correct path for current locale
+  const getLocalizedPath = (path: string) => {
+    return locale === "en" ? path : `/${locale}${path}`;
+  };
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -456,31 +461,40 @@ const TierListMaker = ({ dictionary, locale }: TierListMakerProps) => {
           <div className="mx-auto max-w-4xl space-y-4">
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="/about"
+                href="https://github.com/SymphonyIceAttack/tier-list-maker-two"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-primary transition-colors"
+              >
+                <ExternalLink className="h-4 w-4" />
+                GitHub
+              </Link>
+              <Link
+                href={getLocalizedPath("/about")}
                 className="hover:text-primary transition-colors"
               >
                 About
               </Link>
               <Link
-                href="/contact"
+                href={getLocalizedPath("/contact")}
                 className="hover:text-primary transition-colors"
               >
                 Contact
               </Link>
               <Link
-                href="/faq"
+                href={getLocalizedPath("/faq")}
                 className="hover:text-primary transition-colors"
               >
                 FAQ
               </Link>
               <Link
-                href="/privacy"
+                href={getLocalizedPath("/privacy")}
                 className="hover:text-primary transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                href={getLocalizedPath("/terms")}
                 className="hover:text-primary transition-colors"
               >
                 Terms of Service
