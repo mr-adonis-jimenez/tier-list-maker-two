@@ -9,30 +9,35 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import type { Locale } from "@/lib/i18n/translations";
+import { languageNames, supportedLocales } from "@/lib/constants";
+import type { LanguageType } from "@/lib/translations";
 
-const languages = {
-  en: "English",
-  ja: "日本語",
-  ru: "Русский",
-};
-
-export function LanguageSwitcher({ currentLocale }: { currentLocale: Locale }) {
+export function LanguageSwitcher({
+  currentLocale,
+}: {
+  currentLocale: LanguageType;
+}) {
   const pathname = usePathname();
   const router = useRouter();
 
-  const switchLanguage = (newLocale: Locale) => {
+  const switchLanguage = (newLocale: LanguageType) => {
     const segments = pathname.split("/").filter(Boolean);
-    const isLocaleInPath = ["en", "ja", "ru"].includes(segments[0]);
+    const isLocaleInPath = supportedLocales.includes(
+      segments[0] as LanguageType,
+    );
 
     let newPath: string;
     if (newLocale === "en") {
+      // Switching to default language - remove language prefix if present
       newPath = isLocaleInPath ? `/${segments.slice(1).join("/")}` : pathname;
     } else {
+      // Switching to non-default language
       if (isLocaleInPath) {
+        // Replace existing language prefix
         segments[0] = newLocale;
         newPath = `/${segments.join("/")}`;
       } else {
+        // Add language prefix
         newPath = `/${newLocale}${pathname === "/" ? "" : pathname}`;
       }
     }
@@ -48,10 +53,10 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: Locale }) {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        {Object.entries(languages).map(([locale, label]) => (
+        {Object.entries(languageNames).map(([locale, label]) => (
           <DropdownMenuItem
             key={locale}
-            onClick={() => switchLanguage(locale as Locale)}
+            onClick={() => switchLanguage(locale as LanguageType)}
             className={currentLocale === locale ? "bg-accent" : ""}
           >
             {label}

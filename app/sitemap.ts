@@ -1,19 +1,28 @@
 import { readItems } from "@directus/sdk";
 import type { MetadataRoute } from "next";
+import { allLanguages, defaultLocale, supportedLocales } from "@/lib/constants";
 import directus from "@/lib/directus";
-import { locales } from "@/lib/i18n/translations";
+import type { LanguageType } from "@/lib/translations";
 
 export const revalidate = 86400; // 24 hours in seconds
 
 const staticRoutes = [
-  "/",
-  "/posts",
-  "/about",
-  "/contact",
-  "/privacy",
-  "/faq",
-  "/terms",
-  ...locales.map((item) => `/${item}`),
+  "/", // Default language (en) root path
+  "/posts", // Default language posts
+  "/about", // Default language about
+  "/contact", // Default language contact
+  "/privacy", // Default language privacy
+  "/faq", // Default language faq
+  "/terms", // Default language terms
+  ...supportedLocales.map((lang: LanguageType) => `/${lang}`), // Other language root paths
+  ...supportedLocales.flatMap((lang: LanguageType) => [
+    `/${lang}/posts`,
+    `/${lang}/about`,
+    `/${lang}/contact`,
+    `/${lang}/privacy`,
+    `/${lang}/faq`,
+    `/${lang}/terms`,
+  ]), // Other language pages
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -21,6 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     process.env.NEXT_PUBLIC_SITE_URL || "https://tierlistmakertwo.top";
 
   try {
+    // Generate static pages
     const staticPages: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date(),
@@ -34,19 +44,41 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       readItems("posts", {
         filter: {
           status: { _eq: "published" },
+          language: { _in: allLanguages },
         },
-        fields: ["slug", "published_at", "date_updated"],
+        fields: ["slug", "published_at", "date_updated", "language"],
         sort: ["-published_at"],
       }),
     );
 
-    // Generate sitemap entries for all posts
-    const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-      url: `${baseUrl}/posts/${post.slug}`,
-      lastModified: new Date(post.date_updated || post.published_at),
-      changeFrequency: "weekly" as const,
-      priority: 0.7,
-    }));
+    // Generate sitemap entries for all posts by language
+    const postEntries: MetadataRoute.Sitemap = posts.map((post) => {
+      const lang = post.language as LanguageType;
+      const postPath =
+        lang === defaultLocale
+          ? `/posts/${post.slug}` // Default language
+          : `/${lang}/posts/${post.slug}`; // Other languages
+
+      return {
+        url: `${baseUrl}${postPath}`,
+        lastModified: new Date(post.date_updated || post.published_at),
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+        alternates: {
+          languages: allLanguages.reduce(
+            (acc, language) => {
+              const path =
+                language === defaultLocale
+                  ? `/posts/${post.slug}`
+                  : `/${language}/posts/${post.slug}`;
+              acc[language] = `${baseUrl}${path}`;
+              return acc;
+            },
+            {} as Record<LanguageType, string>,
+          ),
+        },
+      };
+    });
 
     return [...staticPages, ...postEntries];
   } catch (error) {

@@ -20,7 +20,7 @@ import { useRef, useState } from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
-import type { Locale } from "@/lib/i18n/translations";
+import type { LanguageType } from "@/lib/translations";
 
 interface ImageItem {
   id: string;
@@ -122,7 +122,7 @@ interface TierListMakerProps {
     tierLabels: Record<string, string>;
     blog: string;
   };
-  locale: Locale;
+  locale: LanguageType;
 }
 
 const TierListMaker = ({ dictionary, locale }: TierListMakerProps) => {

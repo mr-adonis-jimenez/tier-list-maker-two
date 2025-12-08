@@ -26,6 +26,7 @@ type Post = {
     title: string;
     meta_description: string;
   };
+  language: string;
 };
 
 type Schema = {
