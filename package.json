@@ -1,6 +1,6 @@
 {
   "name": "tier-list-maker-two",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Create and share your custom tier lists with drag & drop functionality. Multi-language support with 7 languages and Cloudflare deployment.",
   "keywords": [
     "tier-list",
@@ -9,9 +9,15 @@
     "react",
     "typescript",
     "multilingual",
-    "cloudflare"
+    "cloudflare",
+    "web-app",
+    "tool"
   ],
-  "author": "SymphonyIceAttack",
+  "author": {
+    "name": "SymphonyIceAttack",
+    "email": "your.email@example.com",
+    "url": "https://github.com/SymphonyIceAttack"
+  },
   "license": "MIT",
   "homepage": "https://tierlistmakertwo.top",
   "repository": {
@@ -21,7 +27,11 @@
   "bugs": {
     "url": "https://github.com/SymphonyIceAttack/tier-list-maker-two/issues"
   },
-  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -29,10 +39,14 @@
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write",
+    "format:check": "biome format --check",
+    "type-check": "tsc --noEmit",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "prepare": "husky install",
+    "clean": "rm -rf .next out dist"
   },
   "dependencies": {
     "@directus/sdk": "^20.2.0",

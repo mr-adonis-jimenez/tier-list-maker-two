@@ -1,9 +1,17 @@
 # Tier List Maker Two
 
 <div align="center">
-  <img src="public/logo.jpeg" alt="Tier List Maker Two" width="200" height="200">
+  <img src="public/README-logo.jpeg" alt="Tier List Maker Two" width="200" height="200">
   
   **Create and share your custom tier lists with drag & drop functionality**
+
+  ![GitHub stars](https://img.shields.io/github/stars/SymphonyIceAttack/tier-list-maker-two?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/SymphonyIceAttack/tier-list-maker-two?style=social)
+  ![GitHub issues](https://img.shields.io/github/issues/SymphonyIceAttack/tier-list-maker-two)
+  ![GitHub license](https://img.shields.io/github/license/SymphonyIceAttack/tier-list-maker-two)
+  ![Node Version](https://img.shields.io/node/v/tier-list-maker-two)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
 
   [🌐 Live Demo](https://tierlistmakertwo.top/) • [📖 Documentation](#features) • [🐛 Report Bug](https://github.com/SymphonyIceAttack/tier-list-maker-two/issues) • [💡 Request Feature](https://github.com/SymphonyIceAttack/tier-list-maker-two/issues)
 </div>
@@ -218,6 +226,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Cloudflare](https://cloudflare.com/) for hosting and performance
 - [Directus](https://directus.io/) for content management
 - All contributors who help improve this project
+
+## 📊 Project Stats
+
+<div align="center">
+
+![GitHub stars](https://img.shields.io/github/stars/SymphonyIceAttack/tier-list-maker-two)
+![GitHub forks](https://img.shields.io/github/forks/SymphonyIceAttack/tier-list-maker-two)
+![GitHub watchers](https://img.shields.io/github/watchers/SymphonyIceAttack/tier-list-maker-two)
+![GitHub issues](https://img.shields.io/github/issues/SymphonyIceAttack/tier-list-maker-two)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/SymphonyIceAttack/tier-list-maker-two)
+![GitHub license](https://img.shields.io/github/license/SymphonyIceAttack/tier-list-maker-two)
+![GitHub last commit](https://img.shields.io/github/last-commit/SymphonyIceAttack/tier-list-maker-two)
+
+---
+
+**⭐ If you find this project helpful, please consider giving it a star!**
+
+</div>
 
 ## 🐛 Bug Reports & Feature Requests
 
